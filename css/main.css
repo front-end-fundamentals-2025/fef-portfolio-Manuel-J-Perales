@@ -1,0 +1,42 @@
+* {
+  font-family: "Playfair Display", serif;
+}
+
+/* HEADER */
+
+#logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none; /*This is to remove the points in the unorder list*/
+  padding-left: 0px;
+}
+
+a {
+  color: black;
+}
+
+/* MAIN */
+
+.main-img {
+  width: 100%;
+}
+
+#email {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid black;
+}
+
+#footer {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
