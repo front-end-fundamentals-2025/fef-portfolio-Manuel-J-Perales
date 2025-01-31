@@ -1,5 +1,9 @@
-* {
+body {
+  background-color: gainsboro;
+  color: #333;
   font-family: "Playfair Display", serif;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* HEADER */
@@ -11,8 +15,13 @@
 }
 
 ul {
-  list-style: none; /*This is to remove the points in the unorder list*/
+  font-size: large;
+  list-style: none; /* This is to remove the points in the unordered list */
   padding-left: 0px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  justify-content: center;
 }
 
 a {
@@ -20,6 +29,48 @@ a {
 }
 
 /* MAIN */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* This is to make the grid responsive */
+  gap: 20px;
+  justify-items: center; /* Center items */
+}
+
+.project-img {
+  width: 100%; /* Make images responsive using relatives */
+  max-width: 250px; /* Set a max width */
+  height: auto;
+  margin-top: 10px;
+  display: block;
+}
+
+.project-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+button {
+  margin: auto;
+}
 
 .main-img {
   width: 100%;
@@ -34,6 +85,8 @@ a {
 
 footer {
   border-top: 1px solid black;
+  text-align: center;
+  padding: 10px;
 }
 
 #footer {
