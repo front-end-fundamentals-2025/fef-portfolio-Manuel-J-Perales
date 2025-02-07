@@ -18,7 +18,7 @@ ul {
   font-size: large;
   list-style: none; /* This is to remove the points in the unordered list */
   padding-left: 0px;
-  display: flex;
+  display: flex; /* Use of flexbox */
   gap: 50px;
   flex-wrap: wrap; /* Ensure items wrap on smaller screens */
   justify-content: center;
@@ -52,7 +52,6 @@ a {
   background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
-  text-decoration: none;
   color: black;
   border: 1px solid #ccc;
   display: flex;
@@ -92,4 +91,23 @@ footer {
 #footer {
   font-weight: 800;
   font-size: 1.5rem;
+}
+
+/* ANIMATION */
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Applying animation to project items */
+
+.project-item {
+  animation: fadeInScale 0.8s ease-in-out;
 }
